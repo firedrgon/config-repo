@@ -1,21 +1,9 @@
-﻿server:
-  port: 8201
-spring:
-  profiles: dev
-  application:
-    name: microservicecloud-config-client
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
----
 server:
-  port: 8202
+  port: 7777 # 端口
+
 spring:
-  profiles: test
   application:
-    name: microservicecloud-config-client
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+    name: config-client # 应用名称
+
+# 自定义配置
+name: config-client-default
